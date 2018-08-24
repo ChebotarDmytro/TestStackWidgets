@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 
+class BaseWidget;
+class QStackedWidget;
+
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -10,6 +13,10 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
+
+private:
+    BaseWidget *widget = nullptr;
+    QStackedWidget *stackWidgets = nullptr;
 };
 
 #endif // MAINWINDOW_H

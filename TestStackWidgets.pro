@@ -25,7 +25,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    basewidget.cpp \
+    yellowwidget.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    basewidget.h \
+    yellowwidget.h
+
+CONFIG += c++11
